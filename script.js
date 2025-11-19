@@ -52,8 +52,8 @@ async function handleLogin(event) {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
-                Прізвище: surname, 
-                КодованийПароль: encodedPassword
+                LastName: surname, 
+                Password: encodedPassword
             })
         });
 
