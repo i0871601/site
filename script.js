@@ -48,6 +48,7 @@ async function handleLogin(event) {
 
     try {
         //Відправлення запиту на Cloudflare Worker
+        console.log(surname,",", encodedPassword)
         const response = await fetch('https://site-worker.i087.workers.dev/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
