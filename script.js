@@ -63,7 +63,7 @@ async function handleLogin(event) {
         if (response.ok && result.status === 'success') {
             const userData = result.data;
           
-            alert(`Вхід успішний! Вітаємо, ${userData.Імя} ${userData.Прізвище} (${userData.Стать}).`);
+            alert(`Вхід успішний! Вітаємо, ${userData.Імя} ${userData.Прізвище} ${userData.Стать}`);
             console.log("Дані користувача:", userData);
 
         } else {
